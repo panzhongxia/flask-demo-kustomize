@@ -32,7 +32,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         if: ${{ github.event.inputs.image }}
-      
+
+      - name: git add
+        run:
+          git config --global --add safe.directory "*"
+            
       - name: kustomize edit
         if: ${{ github.event.inputs.image }}
         run: |
