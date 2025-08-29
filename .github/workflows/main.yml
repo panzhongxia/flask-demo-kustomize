@@ -48,4 +48,5 @@ jobs:
         if: ${{ github.event.inputs.image }}
         with:
           email: pzx123pzx@163.com
+          name: pzx123pzx@163.com
           message: "kustomize set image to ${{ github.event.inputs.image }}:${{ github.event.inputs.sha-tag }}"  
