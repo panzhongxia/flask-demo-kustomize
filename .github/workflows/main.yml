@@ -48,7 +48,7 @@ jobs:
 
       - name: Git Commit/Push Changes   
         uses: actions-x/commit@v2
-        if: ${{ github.event.inputs.image }}
+      #  if: ${{ github.event.inputs.image }}
       #  with:
       #    email: pzx123pzx@163.com
       #    name: pzx123pzx@163.com
