@@ -45,7 +45,9 @@ jobs:
       #    git config --global --add safe.directory "*" 
       - name: Git Commit/Push Changes   
         uses: actions-x/commit@v2
-      #  if: ${{ github.event.inputs.image }}
+        if: ${{ github.event.inputs.image }}
         with:
-          message: "kustomize set image to ${{ github.event.inputs.image }}:${{ github.event.inputs.sha-tag }}"
-  
+          name: git add 
+          run: 
+               git config --global --add safe.directory /github/workspace
+          message: "kustomize set image to ${{ github.event.inputs.image }}:${{ github.event.inputs.sha-tag }}"  
