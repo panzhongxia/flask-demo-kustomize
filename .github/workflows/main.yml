@@ -47,7 +47,5 @@ jobs:
         uses: actions-x/commit@v2
         if: ${{ github.event.inputs.image }}
         with:
-          name: git add 
-          run: 
-               git config --global --add safe.directory /github/workspace
+          email: pzx123pzx@163.com
           message: "kustomize set image to ${{ github.event.inputs.image }}:${{ github.event.inputs.sha-tag }}"  
