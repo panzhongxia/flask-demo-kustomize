@@ -4,7 +4,7 @@ resources:
 - namespace.yaml
 - deployment.yaml
 - service.yaml
-- secret.yaml
+- secret-sealed.yaml
 images:
 - name: panzhongxia/flask-demo
-  newTag: 4e3c18c73f15a59d7ad924682949ca3143025ab7
+  newTag: 31d13b2d76f4de13a3199b0f4c25504c8fc50ef1
