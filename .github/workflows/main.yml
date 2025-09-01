@@ -43,8 +43,8 @@ jobs:
       #- name: git add
       #  run:
       #    git config --global --add safe.directory "*" 
-      - name: Set safe directory
-        run: echo "safe.directory=*" >> ~/.gitconfig
+      #- name: Set safe directory
+      #  run: echo "safe.directory=*" >> ~/.gitconfig
 
       - name: Git Commit/Push Changes   
         uses: actions-x/commit@v2
