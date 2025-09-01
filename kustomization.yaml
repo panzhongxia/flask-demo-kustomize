@@ -7,4 +7,4 @@ resources:
 - secret.yaml
 images:
 - name: panzhongxia/flask-demo
-  newTag: 4e3c18c73f15a59d7ad924682949ca3143025ab7
+  newTag: 6893a9307d31818c99834a3e9dac8e54944a61cc
